@@ -32,10 +32,10 @@ A simple Flappy Bird-style game built with Unity. This is my first ever thing wi
 
 ## Screenshots
 ### In-Game
-![In-Game Screenshot](assets/ingame.png)
+![In-Game Screenshot](Assets/ingame.png)
 
 ### Game Over Screen
-![Game Over Screenshot](assets/gameover.png)
+![Game Over Screenshot](Assets/gameover.png)
 
 ## License
 This project is for educational and personal use. Feel free to modify and share!
