@@ -1,0 +1,39 @@
+using UnityEngine;
+
+public class PipeSpawnScript : MonoBehaviour
+{
+    public GameObject Pipes;
+    public float spawnrate = 2;
+    public float timer = 0;
+    public float heightOffset = 10;
+
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        Spawnpipe();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (timer < spawnrate)
+        {
+            timer += Time.deltaTime;
+        }
+        else
+        {
+            Spawnpipe();
+            timer = 0;
+        }
+    }
+
+    void Spawnpipe()
+    {
+        float lowestPoint = transform.position.y - heightOffset;
+        float highestPoint = transform.position.y + heightOffset;
+
+        Instantiate(Pipes,new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
+    }
+
+}
