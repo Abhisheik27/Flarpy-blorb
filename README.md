@@ -30,5 +30,12 @@ A simple Flappy Bird-style game built with Unity. This is my first ever thing wi
 - `PipeSpawnScript.cs` - Spawns pipes at intervals
 - `middleCollider.cs` - Detects when the bird passes through pipes for scoring
 
+## Screenshots
+### In-Game
+![In-Game Screenshot](assets/ingame.png)
+
+### Game Over Screen
+![Game Over Screenshot](assets/gameover.png)
+
 ## License
 This project is for educational and personal use. Feel free to modify and share!
